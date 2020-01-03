@@ -45,9 +45,7 @@ void setup(){
 void loop() {
   timeClient.update();
 
-  
-  Serial.print(timeClient.getHours());
-  Serial.println(timeClient.getMinutes());
+  Serial.println(timeClient.getHours() * 100 + timeClient.getMinutes());
 
   delay(1000);
 }
